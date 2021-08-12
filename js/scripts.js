@@ -32,3 +32,10 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(){
+    let name = this.querySelector('input[name=name]'), name = name.val();
+    let email = this.querySelector('input[name=email]'), email = email.val();
+    let phone = this.querySelector('input[name=phone]'), phone = phone.val();
+    let msg = this.querySelector('input[name=msg]'), msg = msg.val();
+})
